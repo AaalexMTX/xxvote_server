@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"xxvote_server/app"
+)
 
 func main() {
-	fmt.Println("connect test")
+	fmt.Println("start...")
+	app.Start()
 }
