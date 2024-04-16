@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="登录页面" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="web/css/login_register.css">
+    <link rel="stylesheet" href="web/css/preloader.css">
+</head>
+
+<body>
+<div class="loading">
+    <div class="pic">
+        <span></span>
+    </div>
+</div>
+<section id="main" class="hidden">
+    <div class="background" id="content"></div>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="picture.html">图片浏览</a></li>
+            <li><a href="video.html">视频发现</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+        </ul>
+    </div>
+    <div class="login-container">
+        <h2>用户登录</h2>
+        <form action="login.php" method="post">
+            <div class="form-group">
+                <label for="username">用户名：</label>
+                <input type="text" id="username" name="username" placeholder="请在此输入用户名" required="required">
+            </div>
+            <div class="form-group">
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password" placeholder="请在此输入密码" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit">提交</button>
+            </div>
+        </form>
+    </div>
+</section>
+<script src="web/js/code.jquery.com_jquery-3.6.0.min.js"></script>
+<script src="web/js/preloader.js"></script>
+</body>
+
+</html>

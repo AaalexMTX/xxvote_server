@@ -1,0 +1,178 @@
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    min-width: 1080px;
+    min-height: 720px;
+    animation: frams 12s infinite;
+    /*无限播放*/
+}
+
+@keyframes frams {
+    0% {
+        background-image: url("../images/1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    33% {
+        background-image: url("../images/2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    66% {
+        background-image: url("../images/3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    100% {
+        background-image: url("../images/1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        /* 开始时完全透明 */
+        transform: translateY(120px);
+        /* 初始位置下移120像素 */
+    }
+
+    100% {
+        opacity: 1;
+        /* 结束时完全不透明 */
+        transform: translateY(0);
+        /* 最终位置，不再下移 */
+    }
+}
+
+.navbar {
+    top: 3%;
+    position: absolute;
+    /*悬浮覆盖*/
+    text-align: right;
+    width: 99%;
+    background-color: #ffffff;
+    border-radius: 21px;
+    min-width: 840px;
+    box-shadow: 2px 3px 4px rgba(100, 100, 100, 0.7);
+}
+
+.navbar ul {
+    margin-right: 25px;
+}
+
+.navbar li {
+    display: inline;
+    padding: 15px;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    /*无下划线*/
+}
+
+.navbar a:hover {
+    /* border-radius: 7px;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    border-color: #808080;
+    padding: 10px; */
+    box-shadow: 0 2px #808080;
+    padding-bottom: 5px;
+    transition: box-shadow 0.4s ease;
+    /* 添加过渡效果 */
+    background-color: #ffffff;
+}
+
+.login-container {
+    position: absolute;
+    top: 38%;
+    left: 37%;
+    border-radius: 35px;
+    background-color: #ffffff;
+    box-shadow: 3px 5px 8px rgba(100, 100, 100, 0.9);
+    width: 26%;
+    height: 38%;
+    min-width: 360px;
+    min-height: 280px;
+    max-width: 400px;
+    max-height: 300px;
+    animation: floatIn 2s ease forwards;
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.form-group {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    text-align: center;
+    color: #5a5a5a;
+    font-weight: bold;
+    width: 100%;
+    padding: 9px 0px;
+    border: 2px solid #cccccc;
+    border-radius: 20px;
+}
+
+.form-group button {
+    width: 80%;
+    margin: 0 10%;
+    /* 水平居中 */
+    height: 40px;
+    background-color: rgb(64, 64, 255);
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 选择输入元素的placeholder样式 */
+::placeholder {
+    /* 设置占位符文字的颜色 */
+    color: #999;
+    /* 例如，灰色 */
+
+    /* 设置占位符文字的字体大小和样式 */
+    font-size: 16px;
+    font-style: italic;
+    /* 斜体 */
+
+    /* 设置占位符文字的字体粗细 */
+    font-weight: normal;
+    /* 默认 */
+
+    /* 设置占位符文字的字体 */
+    font-family: Arial, sans-serif;
+
+    /* 设置占位符文字的文本对齐方式 */
+    text-align: center;
+    /* 居中对齐 */
+
+    /* 其他样式属性，如文字阴影、边框圆角等 */
+}

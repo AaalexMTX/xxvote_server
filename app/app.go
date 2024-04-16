@@ -1,7 +1,11 @@
 package app
 
-import "xxvote_server/app/routers"
+import (
+	"fmt"
+	"xxvote_server/app/routers"
+)
 
 func Start() {
+	fmt.Println("start...")
 	routers.NewIndexRouter()
 }
