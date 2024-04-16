@@ -1,0 +1,9 @@
+mysql:
+  ip: "8.210.175.17"
+  port: "3306"
+  user: "root"
+  password: "v123456"
+  tableName: "xxvote_server"
+
+server:
+  port: 8080

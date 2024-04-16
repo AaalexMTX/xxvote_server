@@ -5,21 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="066053ec-fc8d-494e-8262-6e5ae3f51b1d" name="更改" comment="basic framework">
-      <change afterPath="$PROJECT_DIR$/app/logic/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/database.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/models_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/option.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/vote.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/conf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/logic/login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/settings.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/models_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/models_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxvote" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxvote.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "settings.editor.selected.configurable": "Errors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -100,6 +98,8 @@
       <recent name="E:\GO\GoProjects\xxvote_server\web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GO\GoProjects\xxvote_server\app" />
+      <recent name="E:\GO\GoProjects\xxvote_server\app\routers" />
       <recent name="E:\GO\GoProjects\xxvote_server\web\html" />
       <recent name="E:\GO\GoProjects\xxvote_server\web" />
       <recent name="E:\GO\GoProjects\xxvote_server\web\HTML" />
