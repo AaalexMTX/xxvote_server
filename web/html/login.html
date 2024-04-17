@@ -36,10 +36,10 @@
                 <label for="password">密码：</label>
                 <input type="password" id="password" name="password" placeholder="请在此输入密码" required="required">
             </div>
-            <div class="form-group">
-                <button type="submit" id="login_sub">提交</button>
-            </div>
         </form>
+        <div class="form-group">
+            <button type="submit" id="login_sub">提交</button>
+        </div>
     </div>
 </section>
 <script src="web/js/code.jquery.com_jquery-3.6.0.min.js"></script>
@@ -47,36 +47,36 @@
 <script>
     $(document).ready(function(){
         //提交表单时 异步执行
-        // $("#login_sub").on("click",function(){
-        //     $.ajax({
-        //         //请求资源路径
-        //         url:"/login",
-        //         //请求方式
-        //         type:"post",
-        //         //数据形式
-        //         dataType:"json",
-        //         //请求参数
-        //         data:{
-        //             name:$("#username").val(),
-        //             password:$("#password").val(),
-        //             // captcha_id:$("#captcha_id").val(),
-        //             // captcha_value:$("#captcha_value").val()
-        //         },
-        //         //请求成功后调用的回调函数
-        //         success:function (data){
-        //             console.log(data)
-        //             if(data.code !== 0){
-        //                 alert(data.message)
-        //             }else{
-        //                 alert("已登录")
-        //                 setTimeout("pageRedirect()",1000);}
-        //         },
-        //         //请求失败后调用的回调函数
-        //         error:function () {
-        //             alert("登录失败")
-        //         }
-        //     });
-        // });
+        $("#login_sub").on("click",function(){
+            $.ajax({
+                //请求资源路径
+                url:"/login",
+                //请求方式
+                type:"post",
+                //数据形式
+                dataType:"json",
+                //请求参数
+                data:{
+                    username:$("#username").val(),
+                    password:$("#password").val(),
+                    // captcha_id:$("#captcha_id").val(),
+                    // captcha_value:$("#captcha_value").val()
+                },
+                //请求成功后调用的回调函数
+                success:function (data){
+                    console.log(data)
+                    if(data.code !== 0){
+                        alert(data.message)
+                    }else{
+                        alert("login success")
+                        setTimeout("pageRedirect()",500);}
+                },
+                //请求失败后调用的回调函数
+                error:function () {
+                    alert("login failed")
+                }
+            });
+        });
     })
     function pageRedirect(){
         window.location.replace("/index");//实现跳转

@@ -7,7 +7,7 @@ import (
 type User struct {
 	Id         int       `gorm:"column:id;type:int(11);primary_key;AUTO_INCREMENT" json:"id"`
 	Uid        int       `gorm:"column:uid;type:int(11);comment:可展示的uid" json:"uid"`
-	Name       string    `gorm:"column:name;type:varchar(50)" json:"name"`
+	Name       string    `gorm:"column:name;type:varchar(50);NOT NULL" json:"name"`
 	Password   string    `gorm:"column:password;type:varchar(50)" json:"password"`
 	CreateTime time.Time `gorm:"column:create_time;type:datetime" json:"create_time"`
 	UpdateTime time.Time `gorm:"column:update_time;type:datetime" json:"update_time"`
