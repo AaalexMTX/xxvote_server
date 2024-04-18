@@ -3,7 +3,6 @@ package routers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"net/http"
 	"xxvote_server/app/logic"
 )
 
@@ -16,11 +15,12 @@ func NewIndexRouter() {
 	login.Static("/web", "./web")
 	{
 		//根路由
-		login.GET("/index", func(context *gin.Context) {
-			context.HTML(http.StatusOK, "index.html", gin.H{})
-		})
+		login.GET("/index", logic.LoadingRoot)
 		login.GET("/login", logic.GetLogin)
 		login.POST("/login", logic.DoLogin)
+
+		login.GET("/vote", logic.LoadingVotePage)
+		login.GET("/votes", logic.GetVotes)
 	}
 
 	if err := login.Run(":8080"); err != nil {

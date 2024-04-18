@@ -7,6 +7,7 @@ import (
 	"xxvote_server/app/config"
 )
 
+// user
 func TestCreateUser(t *testing.T) {
 	//Test 作为单例测试是 独立执行的 记得初始化配置！！
 	config.InitConfig()
@@ -50,4 +51,12 @@ func TestGetUserStruct(t *testing.T) {
 	var user *User
 	user = GetUserStruct(userName, password)
 	fmt.Printf("%s\n%s\n", user.Name, user.Password)
+}
+
+// vote
+func TestGetVotes(t *testing.T) {
+	config.InitConfig()
+	NewMysql()
+	var votes = GetVotes()
+	fmt.Printf("[TestGetVotes] votes :%+v", votes)
 }

@@ -21,7 +21,7 @@ type Vote struct {
 	Id         int       `gorm:"column:id;type:int(11);primary_key;AUTO_INCREMENT" json:"id"`
 	UserId     int       `gorm:"column:user_id;type:int(11)" json:"user_id"`
 	Title      string    `gorm:"column:title;type:varchar(255)" json:"title"`
-	Time       time.Time `gorm:"column:time;type:datetime;comment:有效时长" json:"time"`
+	Time       int       `gorm:"column:time;type:datetime;comment:有效时长" json:"time"`
 	Status     int       `gorm:"column:status;type:tinyint(1);comment:是否有效" json:"status"`
 	Type       int       `gorm:"column:type;type:tinyint(1);comment:0单选 1多选" json:"type"`
 	Repeat     int       `gorm:"column:repeat;type:tinyint(1);comment:0不可重复 1可重复" json:"repeat"`
