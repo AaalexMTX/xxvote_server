@@ -5,35 +5,47 @@
     left: 0;
     right: 0;
     background-repeat: no-repeat;
-    background-image: url("../images/1.jpg");
+    background-image: url("../images/Dusk.png");
     background-size: cover;
     min-width: 1080px;
     min-height: 720px;
-    animation: frams 12s infinite;
+    animation: frams 15s infinite;
     /*无限播放*/
 }
 
 @keyframes frams {
     0% {
+        background-image: url("../images/Dusk.png");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    20% {
+        background-image: url("../images/Sunset.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    40% {
         background-image: url("../images/1.jpg");
         background-size: cover;
         background-repeat: no-repeat
     }
 
-    33% {
-        background-image: url("../images/2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat
-    }
+    60% {
+         background-image: url("../images/2.jpg");
+         background-size: cover;
+         background-repeat: no-repeat
+     }
 
-    66% {
-        background-image: url("../images/3.jpg");
-        background-size: cover;
-        background-repeat: no-repeat
-    }
+    80% {
+          background-image: url("../images/3.jpg");
+          background-size: cover;
+          background-repeat: no-repeat
+      }
 
     100% {
-        background-image: url("../images/1.jpg");
+        background-image: url("../images/Dusk.png");
         background-size: cover;
         background-repeat: no-repeat
     }

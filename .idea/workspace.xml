@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="066053ec-fc8d-494e-8262-6e5ae3f51b1d" name="更改" comment="basic framework">
-      <change afterPath="$PROJECT_DIR$/web/html/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/Dusk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/Sunset.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/logic/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/logic/index.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/models_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/models_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/vote.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/vote.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/settings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/votePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/vote.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/login_register.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/login_register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/vote.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/vote.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "E:/GO/GoProjects/xxvote",
+    "last_opened_file_path": "E:/GO/GoProjects/xxvote_server/web/images",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -96,6 +94,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GO\GoProjects\xxvote_server\web\images" />
       <recent name="E:\GO\GoProjects\xxvote_server\web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
