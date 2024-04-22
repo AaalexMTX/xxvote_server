@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="066053ec-fc8d-494e-8262-6e5ae3f51b1d" name="更改" comment="basic framework">
-      <change afterPath="$PROJECT_DIR$/web/images/Dusk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/images/Sunset.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/3x.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/xxvote_server.sql" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/xxvote_server.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logic/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/logic/index.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/login_register.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/login_register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/html/vote.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/vote.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/Dusk.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

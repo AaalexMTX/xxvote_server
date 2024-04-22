@@ -18,8 +18,12 @@ func NewIndexRouter() {
 		login.GET("/index", logic.LoadingRoot)
 		login.GET("/login", logic.GetLogin)
 		login.POST("/login", logic.DoLogin)
+
 		//vote
 		login.GET("/vote", logic.LoadingVotePage)
+
+		login.POST("/do_vote", logic.DoVote)
+		login.GET("/vote/infos", logic.GetVoteInfo)
 		login.GET("/votes", logic.GetVotes)
 		//result
 		login.GET("/result", logic.LoadingResultPage)
