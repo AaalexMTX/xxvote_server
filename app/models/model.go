@@ -58,3 +58,9 @@ type VoteOptionUser struct {
 func (m *VoteOptionUser) TableName() string {
 	return "vote_option_user"
 }
+
+// VoteWithOptions 收集用户对应的投票信息
+type VoteWithOptions struct {
+	Vote   Vote         `json:"Vote"`
+	Option []VoteOption `json:"Opt"`
+}

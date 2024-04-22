@@ -1,6 +1,9 @@
 package models
 
-import "fmt"
+import (
+	"fmt"
+	"sync"
+)
 
 // GetVote 查对应userID的所有投票
 func GetVote(voteId int32) {
@@ -22,4 +25,35 @@ func GetVotes() []Vote {
 		fmt.Printf("[models_GetVote]err:%s\n", err.Error())
 	}
 	return votes
+}
+
+func GetVoteWithOptions(VoteId int32) VoteWithOptions {
+	//vote 和 option的联合查询
+	wg := sync.WaitGroup{}
+	var vote Vote
+	opt := make([]VoteOption, 0)
+	//查vote - by id
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		if err := MysqlConnect.Raw("select * from vote where id = ? limit 1", VoteId).Scan(&vote).Error; err != nil {
+			fmt.Printf("[GetVoteWithOptions] vote query failure -- err:%s", err.Error())
+			return
+		}
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		if err := MysqlConnect.Raw("select * from vote_option where vote_id = ?", VoteId).Scan(&opt).Error; err != nil {
+			fmt.Printf("[GetVoteWithOptions] vote query failure -- err:%s", err.Error())
+			return
+		}
+	}()
+
+	wg.Wait()
+	return VoteWithOptions{
+		Vote:   vote,
+		Option: opt,
+	}
 }

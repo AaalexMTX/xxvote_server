@@ -18,9 +18,12 @@ func NewIndexRouter() {
 		login.GET("/index", logic.LoadingRoot)
 		login.GET("/login", logic.GetLogin)
 		login.POST("/login", logic.DoLogin)
-
+		//vote
 		login.GET("/vote", logic.LoadingVotePage)
 		login.GET("/votes", logic.GetVotes)
+		//result
+		login.GET("/result", logic.LoadingResultPage)
+		login.GET("/result/info", logic.GetVoteResult)
 	}
 
 	if err := login.Run(":8080"); err != nil {

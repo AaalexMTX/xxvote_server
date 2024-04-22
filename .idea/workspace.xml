@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="066053ec-fc8d-494e-8262-6e5ae3f51b1d" name="更改" comment="basic framework">
-      <change afterPath="$PROJECT_DIR$/web/html/votePage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/html/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logic/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/logic/index.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/model.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/models_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/models_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/vote.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/vote.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/settings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/votePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/vote.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +75,7 @@
     "Go 测试.xxvote_server/app/models 中的 TestCreateUser.executor": "Run",
     "Go 测试.xxvote_server/app/models 中的 TestGetUser.executor": "Run",
     "Go 测试.xxvote_server/app/models 中的 TestGetUserStruct.executor": "Run",
+    "Go 测试.xxvote_server/app/models 中的 TestGetVoteWithOptions.executor": "Run",
     "Go 测试.xxvote_server/app/models 中的 TestGetVotes.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -125,18 +128,6 @@
       <pattern value="^\QTestCreateUser\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="xxvote_server/app/models 中的 TestCreateUser" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="xxvote_server" />
-      <working_directory value="$PROJECT_DIR$/app/models" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="xxvote_server/app/models" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestCreateUser\E$" />
-      <method v="2" />
-    </configuration>
     <configuration name="xxvote_server/app/models 中的 TestGetUser" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="xxvote_server" />
       <working_directory value="$PROJECT_DIR$/app/models" />
@@ -161,6 +152,18 @@
       <pattern value="^\QTestGetUserStruct\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="xxvote_server/app/models 中的 TestGetVoteWithOptions" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="xxvote_server" />
+      <working_directory value="$PROJECT_DIR$/app/models" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="xxvote_server/app/models" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGetVoteWithOptions\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="xxvote_server/app/models 中的 TestGetVotes" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="xxvote_server" />
       <working_directory value="$PROJECT_DIR$/app/models" />
@@ -175,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 测试.xxvote_server/app/models 中的 TestGetVoteWithOptions" />
         <item itemvalue="Go 测试.xxvote_server/app/models 中的 TestGetVotes" />
         <item itemvalue="Go 测试.xxvote_server/app/models 中的 TestGetUserStruct" />
         <item itemvalue="Go 测试.xxvote_server/app/models 中的 TestGetUser" />
         <item itemvalue="Go 测试.xxvote_server/app/models 中的 TestCreateUser (1)" />
-        <item itemvalue="Go 测试.xxvote_server/app/models 中的 TestCreateUser" />
       </list>
     </recent_temporary>
   </component>

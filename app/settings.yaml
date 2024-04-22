@@ -5,5 +5,10 @@ mysql:
   password: "v123456"
   tableName: "xxvote_server"
 
+redis:
+  ip: "8.210.175.17"
+  port: "6379"
+  db: 0
+
 server:
   port: 8080

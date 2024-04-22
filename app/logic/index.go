@@ -8,7 +8,7 @@ import (
 )
 
 func LoadingVotePage(context *gin.Context) {
-	context.HTML(http.StatusOK, "votePage.html", gin.H{})
+	context.HTML(http.StatusOK, "vote.html", gin.H{})
 }
 
 func LoadingRoot(context *gin.Context) {
@@ -20,6 +20,7 @@ func GetVotes(context *gin.Context) {
 	var votes = models.GetVotes()
 	//响应带着 HTML页面、往页面里传gin.H数据（数据渲染该页面）
 	context.JSON(http.StatusOK, tools.ECode{
-		Data: votes,
+		Data:    votes,
+		Message: "Voting data request successful",
 	})
 }

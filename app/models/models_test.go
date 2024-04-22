@@ -60,3 +60,11 @@ func TestGetVotes(t *testing.T) {
 	var votes = GetVotes()
 	fmt.Printf("[TestGetVotes] votes :%+v", votes)
 }
+
+func TestGetVoteWithOptions(t *testing.T) {
+	config.InitConfig()
+	NewMysql()
+
+	var ans = GetVoteWithOptions(1)
+	fmt.Printf("%+v", ans)
+}
