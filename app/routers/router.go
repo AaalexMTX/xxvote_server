@@ -16,6 +16,7 @@ func NewIndexRouter() {
 	{
 		//根路由
 		login.GET("/index", logic.LoadingRoot)
+		//login
 		login.GET("/login", logic.GetLogin)
 		login.POST("/login", logic.DoLogin)
 

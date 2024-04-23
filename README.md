@@ -13,7 +13,10 @@ go get "gorm.io/gorm"          # GORM 的核心包，操作数据库
 go get "github.com/spf13/viper"
 # Logurs
 go get "github.com/sirupsen/logrus"
+# Session
+go get -u "github.com/gorilla/sessions"         #cookie
+go get -u "github.com/rbcervilla/redisstore/v9" #redis
 ```
 
-将mysql的建表语句转为 GORM中的结构体
+将mysql的建表语句转为 GORM中的结构体<br>
 [mysql create table --> GROM struct](https://old.printlove.cn/tools/sql2gorm)

@@ -35,7 +35,7 @@ func TestGetUser(t *testing.T) {
 	defer CloseMysql()
 	var userName = "admin"
 	var password = "123"
-	if ok := GetUser(userName, password); ok == false {
+	if ok := CheckUser(userName, password); ok == false {
 		fmt.Println("[TestGetUser] user not exist")
 		return
 	}

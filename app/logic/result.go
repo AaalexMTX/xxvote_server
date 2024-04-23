@@ -32,7 +32,7 @@ func LoadingResultPage(context *gin.Context) {
 func GetVoteResult(context *gin.Context) {
 	//拿到要查 投票目录的id
 	id, _ := strconv.ParseInt(context.Query("id"), 10, 32)
-	var voteWithOptions = models.GetVoteWithOptions(int32(id))
+	var voteWithOptions = models.GetVoteWithOptions(int(id))
 	var result = ResultData{
 		Title: voteWithOptions.Vote.Title,
 		Count: 0,

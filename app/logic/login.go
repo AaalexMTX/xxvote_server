@@ -23,16 +23,29 @@ func GetLogin(context *gin.Context) {
 func DoLogin(context *gin.Context) {
 	//将表单传入的 信息 绑在logic层的数据结构中
 	var userInfo loginUserInfo
+
 	if err := context.ShouldBind(&userInfo); err != nil {
 		fmt.Println("[DoLogin]bind info fault")
 	}
+
 	//mysql 查询用户是否存在
-	if ok := models.GetUser(userInfo.UserName, userInfo.Password); ok == false {
-		//fmt.Printf("[DoLogin] info fault \n")
-		context.JSON(http.StatusOK, gin.H{"message": "user no exist"})
+	var user *models.User
+	if user = models.GetUserStruct(userInfo.UserName, userInfo.Password); user.Id < 0 {
+		context.JSON(http.StatusOK, tools.UserErr)
 		return
 	}
+
+	//都验证成功 登录并设置session
+	_ = tools.SetSession(context, userInfo.UserName, user.Id)
+
 	//传消息和重定向页面无法同时进行
-	//context.Redirect(http.StatusSeeOther, "/index")
 	context.JSON(http.StatusOK, tools.OK)
+	context.Redirect(http.StatusSeeOther, "/vote")
+}
+
+func DoLogOut(context *gin.Context) {
+	// 要加入session的清除
+	// 重定向到login界面
+	//context.HTML(http.StatusOK,"login.html",gin.H{})
+	context.Redirect(http.StatusFound, "/login")
 }

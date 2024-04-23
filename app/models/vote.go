@@ -6,7 +6,7 @@ import (
 )
 
 // GetVote 查对应userID的所有投票
-func GetVote(voteId int32) {
+func GetVote(voteId int) {
 	var vote []Vote
 	if err := MysqlConnect.Raw("select * from vote where id = ?", voteId).Scan(&vote).Error; err != nil {
 		fmt.Printf("[models_GetVote]err:%s\n", err.Error())
@@ -27,7 +27,7 @@ func GetVotes() []Vote {
 	return votes
 }
 
-func GetVoteWithOptions(VoteId int32) VoteWithOptions {
+func GetVoteWithOptions(VoteId int) VoteWithOptions {
 	//vote 和 option的联合查询
 	wg := sync.WaitGroup{}
 	var vote Vote

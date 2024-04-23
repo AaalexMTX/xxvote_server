@@ -30,7 +30,7 @@ func GetVoteInfo(context *gin.Context) {
 	//从 Ajax 请求中拿到 申请的 voteId
 	voteId, _ := strconv.Atoi(context.Query("id"))
 
-	result := models.GetVoteWithOptions(int32(voteId))
+	result := models.GetVoteWithOptions(voteId)
 	context.JSON(http.StatusOK, tools.ECode{
 		Code:    0,
 		Message: "get vote info successful",

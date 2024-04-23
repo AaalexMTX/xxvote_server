@@ -1,7 +1,9 @@
 package tools
 
 var (
-	OK = ECode{Code: 0}
+	OK        = ECode{Code: 0}
+	UserErr   = ECode{Code: 1010, Message: "User Not Exist"}
+	CookieErr = ECode{Code: 1011, Message: "Cookie Not Exist"}
 )
 
 type ECode struct {

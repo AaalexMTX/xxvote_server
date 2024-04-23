@@ -7,6 +7,9 @@ import (
 	"xxvote_server/app/routers"
 )
 
+// apiFox 做接口文档
+// 规范使用log
+
 func Start() {
 	fmt.Println("start...")
 	config.InitConfig()
