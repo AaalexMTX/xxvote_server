@@ -42,21 +42,45 @@
                     h1.append('<h2>Status:'+vote.status+'</h2>')
                     $("#vote_info").append(h1)
 
-                    var form = $("<form method=\"post\" action=\"/do_vote\" ></form>")
+                    var form = $("<form method=\"post\" action=\"/do_vote\" id=\"voteOption_sub\"></form>")
                     form.append(' <input type="hidden" name="vote_id" value="'+vote.id+'">')
                     for (const v of data.data.Opt) {
                         form.append('<input type="checkbox" name="opt[]" id="customCheck'+v.id+'" value="'+v.id+'">');
                         form.append('<label  for="customCheck'+v.id+'">'+v.name+'</label>');
                     }
-
-                    form.append('<button type="submit">Submit</button>')
+                    form.append('<button type="submit" >Submit</button>')
                     $("#vote_info").append(form)
+
+                    // 给动态生成的表单绑定提交事件
+                    $("#voteOption_sub").submit(function(event) {
+                        event.preventDefault(); // 阻止默认提交行为
+                        // 使用Ajax提交表单数据
+                        $.ajax({
+                            url: $(this).attr("action"),
+                            type: "POST",
+                            data: $(this).serialize(),
+                            success: function(response) {
+                                alert("提交成功！");
+                            },
+                            error: function(xhr, status, error) {
+                                alert("提交失败：" + error);
+                            },
+                            // 默认执行 清除checkBox中的数据
+                            complete: function() {
+                                // 清除checkbox数据
+                                form.find("input[type='checkbox']").prop("checked", false);
+                            }
+                        });
+                    });
+
                 },
                 error: function(data) {
                     alert(data.message)
                 }
             });
         });
+
+        $()
     });
 
     $("#return_login").on("click",function (){

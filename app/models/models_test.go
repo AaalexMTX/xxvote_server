@@ -68,3 +68,12 @@ func TestGetVoteWithOptions(t *testing.T) {
 	var ans = GetVoteWithOptions(1)
 	fmt.Printf("%+v", ans)
 }
+
+func TestDoVote(t *testing.T) {
+	config.InitConfig()
+	NewMysql()
+	if ok := DoVote(1, 2, []int{4}); ok == false {
+		fmt.Println("vote failure")
+	}
+	fmt.Println("vote success")
+}

@@ -22,10 +22,10 @@ func NewIndexRouter() {
 
 		//vote
 		login.GET("/vote", logic.LoadingVotePage)
-
 		login.POST("/do_vote", logic.DoVote)
 		login.GET("/vote/infos", logic.GetVoteInfo)
 		login.GET("/votes", logic.GetVotes)
+
 		//result
 		login.GET("/result", logic.LoadingResultPage)
 		login.GET("/result/info", logic.GetVoteResult)
