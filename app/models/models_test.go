@@ -14,15 +14,15 @@ func TestCreateUser(t *testing.T) {
 	NewMysql()
 	defer CloseMysql()
 
-	var user = User{
-		Uid:        11,
-		Name:       "t",
-		Password:   "123",
+	newUser := User{
+		Uid:        111,
+		Name:       "T2",
+		Password:   "2222",
 		CreateTime: time.Now(),
 		UpdateTime: time.Now(),
 	}
 	// 执行的函数失败会报擦如错误 不用在Test里特意写
-	if ok := CreateUser(&user); !ok {
+	if err := CreateUser(&newUser); err != nil {
 		fmt.Println("[TestCreateUser] Create fault")
 		return
 	}
@@ -53,6 +53,13 @@ func TestGetUserStruct(t *testing.T) {
 	fmt.Printf("%s\n%s\n", user.Name, user.Password)
 }
 
+func TestGetUserByName(t *testing.T) {
+	config.InitConfig()
+	NewMysql()
+	var user = GetUserByName("admin")
+	fmt.Printf("user: %+v", user)
+}
+
 // vote
 func TestGetVotes(t *testing.T) {
 	config.InitConfig()
@@ -64,7 +71,6 @@ func TestGetVotes(t *testing.T) {
 func TestGetVoteWithOptions(t *testing.T) {
 	config.InitConfig()
 	NewMysql()
-
 	var ans = GetVoteWithOptions(1)
 	fmt.Printf("%+v", ans)
 }
