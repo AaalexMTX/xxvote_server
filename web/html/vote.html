@@ -58,7 +58,7 @@
                         $.ajax({
                             url: $(this).attr("action"),
                             type: "POST",
-                            data: $(this).serialize(),
+                            data: $(this).serialize(),  // 将表单数据序列化为字符串
                             success: function(response) {
                                 alert("提交成功！");
                             },
